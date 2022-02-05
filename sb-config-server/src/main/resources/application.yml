@@ -1,0 +1,15 @@
+spring.application.name: sb-config-server
+server.port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+################## Local repo config ####################
+          uri: file:C:\contents\workspace\github\config-server
+          searchPaths: config-server-client
+          default-label: master
+################## Remote repo config ####################
+#          uri: https://github.com/JavaWiz/config-server
+#          username: de2bc7cc571df3bc7a81074f8ad9a01eaf2aa03c
+#          password:
